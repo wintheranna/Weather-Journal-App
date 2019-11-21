@@ -5,11 +5,11 @@ body{
 
 #app{
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(100px, auto);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
-    color: #f0d43a;
+    background: #007eb1;
+    color: #86d4ec;
     justify-content: center;
     grid-gap: 1em;
     font-size: 20px;
