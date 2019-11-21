@@ -50,7 +50,8 @@ body{
   text-decoration: underline;
 }
 .title{
-
+  margin-left: 8px;
+  color: #ffffff;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
