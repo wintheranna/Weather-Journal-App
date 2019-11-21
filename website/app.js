@@ -10,6 +10,15 @@ document.getElementById('generate').addEventListener('click', performAction);
 /* Function called by event listener */
 
 /* Function to GET Web API Data*/
+const getData = async (baseUrl, newZip, toCelsius, apiKey) => {
+  const response = await fetch(baseUrl+newZip+toCelsius+apiKey);
+  try {
+    const data = await response.json();
+    return data;
+  } catch(error) {
+      console.log('error', error);
+  }
+}
 
 /* Function to POST data */
 
