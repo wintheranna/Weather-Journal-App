@@ -1,4 +1,6 @@
 // Setup empty JS object to act as endpoint for all routes
+const projectData = {};
+
 // Express to run server and routes
 
 // Start up an instance of app
@@ -19,4 +21,3 @@
 // Callback function to complete GET '/all'
 
 // Post Route
-  
