@@ -42,6 +42,9 @@ function callBack(req, res){
 
 // Post Route
 app.post('/save', function (req, res) {
-    console.log(req.body);
-    res.send(req.body);
+    projectData.temp = req.body.temp;
+    projectData.date = req.body.date;
+    projectData.feelings = req.body.feelings;
+    console.log('Post recieved');
+    res.end();
 });
