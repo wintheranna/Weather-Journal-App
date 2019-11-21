@@ -5,6 +5,7 @@ const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
 const toCelsius = '&units=metric';
 
 // Event listener to add function to existing HTML DOM element
+document.getElementById('generate').addEventListener('click', performAction);
 
 /* Function called by event listener */
 
