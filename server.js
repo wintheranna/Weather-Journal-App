@@ -41,3 +41,7 @@ function callBack(req, res){
 }
 
 // Post Route
+app.post('/save', function (req, res) {
+    console.log(req.body);
+    res.send(req.body);
+});
