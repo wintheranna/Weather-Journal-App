@@ -65,7 +65,7 @@ input{
     height: 60px;
     width: 320px;
     background:#22b2da;
-    color: #f0d43a;
+    color: #86d4ec;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
@@ -75,7 +75,7 @@ button{
     width: 400px;
     height: 100px;
     background: #3b4a6b;
-    color: #f0d43a;
+    color: #86d4ec;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
     border: none;
@@ -87,7 +87,7 @@ h1{
 
 textarea{
     background:#22b2da;
-    color: #f0d43a;
+    color: #86d4ec;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
