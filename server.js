@@ -33,7 +33,11 @@ function listening() {
 }
 
 // Initialize all route with a callback function
+app.get('/all', callBack);
 
 // Callback function to complete GET '/all'
+function callBack(req, res){
+  res.send(projectData);
+}
 
 // Post Route
