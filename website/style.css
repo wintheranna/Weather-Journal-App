@@ -24,20 +24,25 @@ body{
     background: rgba(59, 74, 107, .4);
 }
 
-#entryHolder{
+#generate {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 
+#entryHolder{
+  margin: 8px;
 }
 
 #date{
-
+  font-size: 16px;
 }
 
 #temp{
-
+  color: #ffffff;
 }
 
 #content{
-
+  color: #ffffff;
 }
 
 .headline {
@@ -92,20 +97,20 @@ button:focus {
     outline: none;
 }
 /* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
 
-} 
+}
