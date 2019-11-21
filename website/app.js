@@ -8,6 +8,22 @@ const toCelsius = '&units=metric';
 document.getElementById('generate').addEventListener('click', performAction);
 
 /* Function called by event listener */
+function performAction(e) {
+  let newZip = document.getElementById('zip').value;
+  let feelings = document.getElementById('feelings').value;
+  let ourDate = new Date();
+  let date = (ourDate.getFullYear() + '-' + (ourDate.getMonth()+1) + '-' + ourDate.getDate());
+  getData(baseUrl, newZip, toCelsius, apiKey)
+  .then(function(data) {
+    postData('/save', {
+      temp: data.main.temp,
+      date: date,
+      feelings: feelings
+    });
+  }).then( () => {
+      updateUI('/all');
+    });
+}
 
 /* Function to GET Web API Data*/
 const getData = async (baseUrl, newZip, toCelsius, apiKey) => {
