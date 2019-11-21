@@ -38,3 +38,15 @@ const postData = async (url='', data={}) => {
 
 
 /* Function to GET Project Data */
+const updateUI = async () => {
+  const request = await fetch('/all');
+  try {
+    const allData = await request.json();
+    console.log(allData);
+    document.getElementById('date').innerHTML = 'Date: ' + allData.date;
+    document.getElementById('temp').innerHTML = 'Temperature: ' + allData.temp + ' °C';
+    document.getElementById('content').innerHTML = 'You are feeling: ' + allData.feelings;
+  } catch(error) {
+      console.log('error', error);
+  }
+}
